@@ -13,8 +13,8 @@ public class Scuola {
     }
     
     
-    public void aggiungiAlunno(String nome, String cognome, int anno, String luogo, boolean bocciato){
-    Alunno alunno= new Alunno(nome,cognome,anno,luogo,bocciato);
+    public void aggiungiAlunno(String nome, String cognome, int anno, String luogo){
+    Alunno alunno= new Alunno(nome,cognome,anno,luogo);
     stud.add(alunno);
     
 }
@@ -30,14 +30,12 @@ public class Scuola {
         classi.add(classe);
     
     }
-    public void aggiungiUtenteClasse(){
-        Alunno alunno1=null;
-        Alunno alunno2=null;
-        Alunno alunno3=null;
+    public void aggiungiUtenteClasse(String primaClasse,String secondaClasse,String terzaClasse){
+        
     
         
         for (Classe classe : classi) 
-            if(classe.getNomeClasse().equalsIgnoreCase("Prima c")){
+            if(classe.getNomeClasse().equalsIgnoreCase(primaClasse)){
                 for (Alunno alunno : stud) {
                     if(alunno.getAnno()<=1980){
                         
@@ -47,7 +45,7 @@ public class Scuola {
                 }
             }
     
-            else if(classe.getNomeClasse().equalsIgnoreCase("Seconda c")){
+            else if(classe.getNomeClasse().equalsIgnoreCase(secondaClasse)){
                 for (Alunno alunno : stud) {
                     if(alunno.getAnno()>1980 && alunno.getAnno()<=1990){
                         
@@ -56,7 +54,7 @@ public class Scuola {
 }
                 }
             }
-            else if (classe.getNomeClasse().equalsIgnoreCase("Terza c")){
+            else if (classe.getNomeClasse().equalsIgnoreCase(terzaClasse)){
                 for (Alunno alunno : stud) {
                     if(alunno.getAnno()>1990 && alunno.getAnno()<=2000 ){
                         classe.getAlunniClasse().add(alunno);

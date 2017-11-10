@@ -4,15 +4,15 @@ public class Alunno {
    private String cognome;
    private int anno;
    private String luogo;
-   private boolean bocciato;
+   
    
 
-    public Alunno(String nome, String cognome, int anno, String luogo, boolean bocciato) {
+    public Alunno(String nome, String cognome, int anno, String luogo) {
         this.nome = nome;
         this.cognome = cognome;
         this.anno = anno;
         this.luogo = luogo;
-        this.bocciato = bocciato;
+        
     }
 
     public String getNome() {
@@ -31,9 +31,7 @@ public class Alunno {
         return luogo;
     }
 
-    public boolean isBocciato() {
-        return bocciato;
-    }
+    
 
    @Override
    public String toString(){
