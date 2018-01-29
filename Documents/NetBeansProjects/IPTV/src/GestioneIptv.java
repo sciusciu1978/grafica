@@ -6,7 +6,7 @@ public class GestioneIptv {
     ArrayList<Server> server= new ArrayList<Server>();
     ArrayList<Abbonato> abbonatiRimossi= new ArrayList<Abbonato>();
   
-    HashMap<Abbonato,Double> debitiCorrenti = new HashMap<Abbonato,Double>();
+    //HashMap<Abbonato,Double> debitiCorrenti = new HashMap<Abbonato,Double>();
     
     
     public void aggiungiNuovoAbbonato(String server,double prezzoMensile, String numeroTelefono,String username, String annotazioni){
